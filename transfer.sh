@@ -14,7 +14,7 @@ Download file test.txt to directory ./test with id on the remote Mij6ca
 EOF
 )
 
-currentVersion="0.0.1"
+currentVersion="1.23.0"
 
 httpSingleUpload()
 {
@@ -45,7 +45,7 @@ singleDownload()
 }
 
 getopts "dhv" opt
-case $opt in
+case "$opt" in
   h)
     echo "$USAGE" && exit
     ;;
